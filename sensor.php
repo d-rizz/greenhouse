@@ -14,8 +14,8 @@ function readSensor($sensor)
         	$db = mysqli_connect("localhost","datalogger","datalogger") or die("DB Connect error"); 
 	mysqli_select_db($db, "datalogger"); 
 	$q = "INSERT INTO datalogger VALUES (now(), $sensor, '$temp', '$humid',0)"; 
-	mysql_query($q); 
-	mysql_close($db); 
+	mysqli_query($db, $q); 
+	mysqli_close($db); 
 	return; 
 } 
 
