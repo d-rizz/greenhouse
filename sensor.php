@@ -18,7 +18,7 @@ function readSensor($sensor)
 	mysql_close($db); 
 	return; 
 } 
-readSensor(9); 
+
 readSensor(8); 
-readSensor(7); 
+
 ?> 
