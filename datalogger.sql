@@ -36,21 +36,6 @@ CREATE TABLE IF NOT EXISTS `datalogger` (
   `pwm` int(11) unsigned DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `datalogger`
---
-
-INSERT INTO `datalogger` (`date_time`, `sensor`, `temperature`, `humidity`, `pwm`) VALUES
-('2015-02-26 06:30:04', '9', 21.8, 85.4, 0),
-('2015-02-26 06:30:06', '8', 21.7, 80.3, 0),
-('2015-02-26 06:30:07', '7', 22.1, 27.9, 0),
-
-
--- --------------------------------------------------------
-
---
--- Table structure for table `history`
---
 
 CREATE TABLE IF NOT EXISTS `history` (
   `date_time` datetime DEFAULT NULL,
@@ -59,21 +44,6 @@ CREATE TABLE IF NOT EXISTS `history` (
   `humidity` float unsigned DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
---
--- Dumping data for table `history`
---
-
-INSERT INTO `history` (`date_time`, `sensor`, `temperature`, `humidity`) VALUES
-('2015-01-25 00:00:00', '8', NULL, NULL),
-('2015-01-25 00:00:00', '9', NULL, NULL),
-('2015-02-20 00:00:00', '8', NULL, NULL);
-
-
--- --------------------------------------------------------
-
---
--- Table structure for table `user`
---
 
 CREATE TABLE IF NOT EXISTS `user` (
   `id_user` int(11) NOT NULL AUTO_INCREMENT,
